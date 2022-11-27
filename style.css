@@ -1,0 +1,347 @@
+:root {
+    --header-color: rgb(49, 49, 50);
+    --footer-color: rgba(219, 219, 219, 0.39);
+}
+
+html {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--header-color);
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container>ul>li {
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(214, 214, 214);
+}
+
+.container>ul>li:hover {
+    color: white;
+}
+
+.container>ul>li>img {
+    width: 17px;
+}
+
+.offer {
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(241, 241, 241);
+}
+
+.offer-tag {
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.banner1-image {
+    width: 100%;
+    height: 500px;
+    background-image: url("https://about.att.com/ecms/dam/snr/2020/November2020/StoryLevelBanner/11042020_iPhoneProMax_STORY_LEVEL_BANNER_1600x483.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner-content>h3 {
+    font-size: 70px;
+}
+
+.banner-content>h5 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.banner-buttons {
+    margin-top: 10px;
+}
+
+.banner-buttons>a {
+    text-decoration: none;
+    color: rgb(116, 116, 252);
+    font-size: 20px;
+}
+
+.banner2-image {
+    width: 100%;
+    height: 500px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0808/0067/files/category_banner_ip14pro_promax_desktop_1.jpg?v=1662594151");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner2-image>.banner-content {
+    color: black;
+}
+
+.banner3-image {
+    width: 100%;
+    height: 500px;
+    background-image: url("https://about.att.com/ecms/dam/snr/2020/March2020/StoryLevelBanner/03.19.2020_iPadPro_OPT_3_STORY_LEVEL_BANNER_1600x483.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banner3-image>.banner-content>.banner-buttons>a {
+    color: rgb(0, 0, 0);
+}
+
+.banner-grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+}
+
+.product-image {
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.product-image1 {
+    background-image: url("https://fcp.co/images/stories/2020/03_2020/apple-update/ipad-pro-banner.jpg");
+    color: black;
+    width: 100%;
+}
+
+.product-content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.product-content2,
+.product-content4 {
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+
+.product-content>h3 {
+    font-size: 70px;
+}
+
+.product-content>h5 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-content>h5>span {
+
+    display: flex;
+    justify-content: center;
+}
+
+.product-content>h5>span>img {
+    width: 30px;
+}
+
+.product-image2 {
+
+    background-image: url("https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.slideshow-xlarge.jpg");
+    color: black;
+}
+
+.product-image3 {
+
+    background-image: url("https://images.unsplash.com/photo-1616781678220-15abd16b61e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YXBwbGUlMjBhaXJwb2RzJTIwcHJvfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    color: rgb(255, 255, 255);
+}
+
+.product-image4 {
+
+    background-image: url("https://images.macrumors.com/t/AxJ0yAv0Tr_75Dke2Ab5Rl8T-Gc=/1600x0/article-new/2022/10/apple-tv-4k-yellow-bg-feature.jpg");
+    color: rgb(0, 0, 0);
+}
+
+
+.corosol {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+}
+
+.corosol>a {
+    margin: 10px;
+}
+
+.corosol>a>img {
+    width: 1250px;
+}
+
+.corosol::-webkit-scrollbar {
+    display: none;
+}
+
+.corosol-nav-button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(177, 177, 177);
+    border-radius: 50%;
+}
+
+.terms-and-condition {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-and-condition>hr {
+    width: 50%;
+}
+
+.terms-and-condition,
+.external-links {
+    background-color: var(--footer-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.terms {
+    width: 50%;
+}
+
+.external-links {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.links>div {
+    width: 100%;
+}
+
+.ext-link1>ul,
+.ext-link2>ul,
+.ext-link3>ul,
+.ext-link4>ul,
+.ext-link5>ul {
+    list-style-type: none;
+}
+
+.ext-link1>ul>li,
+.ext-link2>ul>li,
+.ext-link3>ul>li,
+.ext-link4>ul>li,
+.ext-link5>ul>li {
+    margin-top: 10px;
+}
+
+.heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.more-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-color);
+}
+
+.more-link-content {
+    width: 50%;
+    color: black;
+    font-size: 17px;
+    padding: 20px;
+}
+.more-link-content>h5>a{
+    text-decoration: none;
+    color: blue;
+}
+.more-link-content>hr{
+    margin-top: 10px;
+}
+.copyright-and-privacy{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.copyright-and-privacy>div>a{
+    margin-left: 20px;
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
